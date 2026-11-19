@@ -1,0 +1,6 @@
+numpy>=1.21
+matplotlib>=3.5
+# optional: branch and cut baseline (needs a Gurobi license)
+# gurobipy>=10
+# optional: tests
+# pytest>=7

@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rspect"
+version = "1.0.0"
+description = "RSPECT: robust and scalable planning for energy-aware UAV-UGV teams in aerial monitoring"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Cahit Ikbal Er" }, { name = "Amin Kashiri" }, { name = "Yasin Yazıcıoğlu" }]
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.21", "matplotlib>=3.5"]
+
+[project.optional-dependencies]
+bnc = ["gurobipy>=10"]
+test = ["pytest>=7"]
+
+[project.urls]
+Paper = "https://doi.org/10.1007/s10846-026-02426-5"
+Video = "https://youtu.be/jQkGfwVTdBc"
+Lab = "https://github.com/Multi-Agent-Robotics-and-Autonomy-Lab"
+
+[tool.setuptools]
+packages = ["rspect"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
